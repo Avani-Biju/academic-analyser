@@ -1,0 +1,534 @@
+Literature Review: Data-Driven Academic Performance
+Analysis System
+Overview
+This literature review compiles relevant research papers and resources across eight key
+areas relevant to the Data-Driven Academic Performance Analysis System project. The
+papers cover educational data mining, ML prediction models, document parsing with
+LLMs, topic extraction, learning analytics dashboards, human-in-the-loop systems, and
+explainability techniques.
+1. EDUCATIONAL DATA MINING & STUDENT PERFORMANCE
+PREDICTION
+Foundation Papers
+Predicting Students' Academic Performance Using Machine Learning Algorithms
+(2021)
+Comprehensive survey of EDM techniques including support vector regression,
+Random Forest, and deep learning approaches
+URL: ScienceDirect (2021)
+Key insight: Data-driven SPP provides objective reference for education system
+improvement
+Educational Data Mining Techniques for Student Performance Prediction: Method
+Review and Comparison Analysis
+Systematic review comparing approaches for predicting student performance
+Focus on handling diverse factors affecting performance and addressing
+imbalanced data challenges
+Covers use cases for students, instructors, and educational managers
+URL: NCBI/PMC
+Role of Convolutional Features and Machine Learning for Predicting Student
+Academic Performance from MOODLE Data
+Proposes deep learning system with convoluted features for predicting
+performance
+Addresses accuracy, imbalanced data, and feature engineering challenges
+URL: NCBI/PMC
+Advanced Predictive Models
+Predicting Students' Academic Performance with Conditional Generative
+Adversarial Network and Deep SVM
+
+Combines CGAN with deep-layer SVM for performance prediction
+Leverages technology-assisted learning platform data for timely interventions
+URL: NCBI/PMC
+The Role of Demographic and Academic Features in Student Performance
+Prediction
+Examines feature selection and model comparison (Decision Trees, SVM,
+Support Vector Machines achieve 92% accuracy)
+Discusses how varying features depend on level of study, program, and subject
+type
+URL: NCBI/PMC
+Predicting Students Performance in Educational Data Mining (IEEE)
+Applies deep learning classification models for predicting performance
+Discusses how traditional methods struggle with nonlinear relationships in
+educational data
+Addresses the need for models that handle complex dependencies
+URL: IEEE Xplore
+Comprehensive Surveys
+Predicting Students' Academic Performance to Predict Student Performance
+Prediction: A Survey Study (2022)
+Compares ~260 studies over 20 years
+Identifies ANN and Random Forest as most-used data mining techniques
+Discusses major factors affecting performance and feature selection algorithms
+URL: Springer Nature
+Educational Data Mining to Predict Students' Academic Performance: A Survey
+Study (2022)
+Focus on identifying at-risk students proactively
+Comprehensive analysis of data mining tools and techniques
+URL: Springer Nature (July 2022)
+Predictive Modelling with OULAD: A Systematic Literature Review (2024)
+Reviews predictive modeling using Open University Learning Analytics Dataset
+Discusses XAI approaches and interpretability in educational context
+URL: ResearchGate (July 2024)
+Specialized Applications
+Regularized Multi-Path XSENet Ensembler for Enhanced Student Performance
+Prediction (2024)
+Recent ML/data mining advances in education
+
+Emphasis on sustainability goals and pre-admission data predictions
+URL: NCBI/PMC
+2. DOCUMENT PARSING & EXTRACTION WITH LARGE LANGUAGE
+MODELS
+LLM-Based Document Processing
+Document Parsing Using Large Language Models - With Code (Towards Data
+Science, 2025)
+End-to-end PDF parsing workflow using GPT-4o and Claude
+Three-component workflow: Input → Processing → Output
+Practical implementation using pdfminer.six, PyPDF2, and LLMs
+URL: Towards Data Science (January 2025)
+OmniDocBench: Benchmarking Diverse PDF Document Parsing with
+Comprehensive Annotations (2024)
+Comprehensive benchmark for document content extraction
+Critical for LLM/RAG systems requiring high-quality document input
+URL: arXiv (2412.07626)
+Conversational Text Extraction with Large Language Models Using Retrieval-
+Augmented Systems
+Leverages LLMs for text extraction and user interaction with PDFs
+Implements Retrieval-Augmented Generation (RAG) for relevant passage
+retrieval
+Uses sentence embeddings for document-specific vector stores
+URL: arXiv
+PDF Extraction Challenges & Solutions
+PDF Hell and Practical RAG Applications (LLMWhisperer Blog, 2025)
+Addresses practical challenges of extracting text from PDFs for LLM/NLP
+applications
+Discusses layout preservation challenges and character representation issues
+URL: Unstract Blog (December 2025)
+From PDFs to AI-Ready Structured Data: A Deep Dive (Explosion AI)
+Workflows for handling PDFs in NLP context
+Covers layout analysis, OCR, table recognition, and structured output
+Discusses transfer learning and fine-tuning approaches
+Mentions Docling (IBM Research tool) for comprehensive PDF processing
+
+URL: Explosion AI Blog
+ChunkNorris: A High-Performance and Low-Energy Approach to PDF Parsing and
+Chunking
+Recent advances in PDF parsing techniques combining traditional and ML
+approaches
+State-of-the-art methods (PDFMiner, PyPDF2 libraries)
+URL: arXiv (2602.00010)
+PDF Parsing With LLMs: Enterprise Guide (LlamaIndex Blog)
+LlamaParse for state-of-the-art vision-language processing
+Addresses limitations of OCR and rule-based parsing
+Enterprise-grade infrastructure for PDF transformation
+URL: LlamaIndex.ai
+Tabular PDF Information Extraction with Local LLMs and Layout-Aware Parsing
+(2025)
+Reliability evaluation of LLM-based extraction from tabular PDFs
+URL: arXiv (2604.00003)
+Information Extraction Fundamentals
+Information Extraction with LLM (Medium, 2023)
+Uses advanced LLMs (Llama-v2) for extracting structured data from
+unstructured text
+Discusses PDF complexities, OCR issues, and layout variations
+Transformer-based architectures for capturing dependencies
+URL: Medium (August 2023)
+3. MULTIMODAL LARGE LANGUAGE MODELS (VISION-LANGUAGE
+MODELS)
+Capabilities & Comparisons
+Multimodal AI Face-Off: Claude, GPT-4V, and Gemini in 2026
+Practical comparison of Claude 4.5, GPT-4V, and Gemini 3 for document
+analysis
+Benchmarks across image understanding and vision-language tasks
+URL: Claude 5 Hub (May 2026)
+Claude 3.5 Sonnet Document Analysis Capabilities (2026)
+Excellent for reading PDFs, understanding form layouts, extracting table data
+200K context window for processing multiple images/documents
+
+URL: LLM Trust (March 2026)
+The Multimodal AI Guide: Vision, Voice, Text, and Beyond (KDnuggets)
+Comparison of GPT-4V, Claude, Gemini with open-source alternatives (LLaVA,
+Qwen-VL)
+Discussion of OCR-free document understanding
+URL: KDnuggets
+Vision-Language Model Overview (Grokipedia, 2026)
+Advantages of multimodal VLMs over traditional OCR
+Superior contextual understanding, layout awareness
+URL: Grokipedia (March 2026)
+Research Papers on Vision-Language Models
+Document Haystack: A Long Context Multimodal Image/Document
+Understanding Vision LLM Benchmark
+Benchmarking multimodal LLMs (GPT-4, Gemini 1.5, LLama 3.2, Claude 3)
+Importance of document understanding in legal, medical, financial sectors
+URL: arXiv (2507.15882)
+The Dawn of LMMs: Preliminary Explorations with GPT-4V(ision) (Microsoft
+Corporation)
+Comprehensive analysis of large multimodal models
+Explores tasks, capabilities, prompting strategies
+URL: arXiv (2309.17421)
+GPT-4 Vision: Multi-Modal Evolution of ChatGPT and Potential Role in Radiology
+(2024)
+GPT-4V capabilities for text generation from images without specialized
+training
+Transformation from LLM to Large Multimodal Model
+URL: Cureus/NCBI
+Multimodal Large Language Models: Transforming Computer Vision (Edge AI
+Alliance, 2025)
+Overview of MLLMs from major tech companies
+Discusses GPT-4o, Claude 3.5 Sonnet, LLaVA, and open-source alternatives
+URL: Edge AI and Vision Alliance (January 2025)
+Multi-Agent Interactive Question Generation Framework for Long Document
+Understanding
+Multi-hop reasoning across extended documents
+URL: arXiv (2507.20145)
+
+4. TOPIC MODELING & EXTRACTION
+Latent Dirichlet Allocation (LDA) & Traditional Methods
+Combining Language and Topic Models for Hierarchical Text Classification
+Overview of topic models (LDA, recent approaches like BERTopic)
+LDA represents documents as distributions over topics
+URL: arXiv (2507.16490)
+Topic Modeling Algorithms: Learn About Mathematical Concepts (Medium, 2023)
+Comprehensive comparison of LDA, NMF, and BERTopic
+Discusses probability distributions and decomposition approaches
+URL: Medium (August 2023)
+BERTopic & Modern Approaches
+LDA Topic Modeling Tutorial with Python and BERTopic (Holistic SEO, 2022)
+BERTopic implementation using UMAP, HDBSCAN, Sentence Transformers
+Practical guide for installation and usage
+URL: Holistic SEO (October 2022)
+Beyond Sentiment: Leveraging Topic Metrics for Political Stance Classification
+Comparison of LDA, NMF, and BERTopic coherence scores
+BERTopic demonstrates superior coherence across datasets
+Manual topic labeling based on extracted keywords
+URL: arXiv (2310.15429)
+AI-Powered Topic Modeling: Comparing LDA and BERTopic (2024-2025)
+BERTopic integration with ChatGPT-4-Turbo for automatic interpretation
+Enhanced interpretability and semantic coherence vs. LDA
+Compact, well-separated clusters from BERTopic
+URL: NCBI/PMC and PubMed (February 2025)
+Unravelling Technical Debt Topics Through Time, Programming Languages and
+Repository
+BERTopic's transformer-based approach for semantic meaning
+Comparison with traditional methods (LDA, LSA)
+URL: arXiv (2504.11714)
+Moving Beyond LDA: A Comparison of Unsupervised Topic Modeling Techniques
+(2024)
+Advanced techniques: Sentence-BERT, UMAP, HDBSCAN, cTF-IDF
+URL: arXiv (2412.14486)
+
+Analyzing Folktales of Different Regions Using Topic Modeling and Clustering
+(2022)
+BERTopic's three-step process: embedding → dimensionality reduction → topic
+extraction
+Overcomes LDA's limitations in capturing semantic relationships
+URL: arXiv (2206.04221)
+5. LEARNING ANALYTICS DATASETS & BENCHMARKS
+Open University Learning Analytics Dataset (OULAD)
+Open University Learning Analytics Dataset (Nature Scientific Data, 2017)
+Comprehensive dataset containing 32,593 students across 22 module
+presentations
+Includes student demographics and VLE interaction data from 2013-2014
+Available on UCI Machine Learning Repository
+URL: Nature Scientific Data & UCI Machine Learning Repository
+Open Learning Analytics: A Systematic Review of OULAD Studies (2022)
+Review of benchmark studies using OULAD
+Focus on assessing student performance in Virtual Learning Environments
+URL: ACM Proceedings (2022)
+ouladFormat R Package: Preparing OULAD for Analysis (2025)
+R package for loading and formatting OULAD
+Simplifies preprocessing for educational research
+URL: arXiv (2501.08366)
+OULAD Datasets on Kaggle (Updated regularly)
+Multiple analysis examples: Random Forest models, Personalized Learning
+Paths, Engagement tracking
+Community-contributed notebooks and case studies
+URL: Kaggle Datasets
+Predictive Modeling with OULAD
+Predictive Modelling with OULAD: A Systematic Literature Review (2024)
+Reviews predictive approaches using OULAD
+Covers algorithms: Logistic Regression, SVM, Random Forest, XGBoost
+Emphasis on explainable AI for academic risk prediction
+URL: ResearchGate (July 2024)
+
+6. LEARNING ANALYTICS DASHBOARDS & VISUALIZATIONS
+Dashboard Design & Implementation
+Everything You Need to Know About Learning Analytics Dashboard (KITABOO,
+2024)
+Common visualizations: bar charts, line graphs, heatmaps, scatter plots
+KPIs: engagement, progress, achievement, behavior
+Personalization benefits for enhanced learner engagement
+URL: KITABOO Blog (February 2024)
+Learning Analytics Dashboard: A Tool for Providing Actionable Insights to
+Learners
+Design of dashboards for triggering positive behavioral changes
+Prediction capabilities for learning outcomes based on trajectory
+Challenges: determining effective visual elements without inducing anxiety
+URL: Springer Nature (February 2022)
+Development of the Learning Analytics Dashboard to Support Students' Learning
+Performance (2014)
+Tracks students' online behavior patterns in VLE
+Uses data mining and visualization for comprehension
+Usability testing with stimulus recall interviews
+URL: JUCS Journal (October 2014)
+LearningViz: A Dashboard for Visualizing, Analyzing and Closing Learning
+Performance Gaps (2024)
+User-centered design with interactive analytics
+Supports instructors in detecting performance gaps and investigating factors
+Emphasis on cognitive load reduction through visualization
+URL: Springer Nature (December 2024)
+The Current Landscape of Research and Practice on Visualizations and
+Dashboards for Learning Analytics (2021)
+Comprehensive overview of LAD research and practice
+Design considerations: what data, for whom, why, and how to represent
+Challenges: usability, evaluation, privacy, adoption
+URL: ResearchGate (December 2021)
+A Visual Dashboard to Track Learning Analytics for Educational Cloud
+Computing
+CloudTrail-Tracker for AWS usage analytics
+Progress tracking and pending actions for student self-regulation
+
+Integration in multiple cloud subjects
+URL: NCBI/PMC
+Related Research
+AISSA: Implementation and Deployment of an AI-Based Student Slides Analysis
+Tool (2025)
+Learning analytics dashboards as key instruments for educational data
+Evolution from log-based dashboards to richer multimodal approaches
+Challenges: usability, evaluation, privacy, adoption
+URL: arXiv (2605.04729)
+7. HUMAN-IN-THE-LOOP & INTERACTIVE MACHINE LEARNING
+Foundational Concepts
+Human-in-the-Loop Machine Learning: Active Learning and Annotation
+(Manning/IEEE)
+Practical guide to optimizing ML process with human feedback
+Techniques: annotation, active learning, transfer learning
+URL: IEEE Xplore (2024)
+Human-in-the-Loop Machine Learning: A State of the Art (Springer, 2022)
+Categorizes human involvement: active learning, interactive ML, machine
+teaching
+Discusses curriculum learning and explainable AI
+URL: Artificial Intelligence Review (August 2022)
+How to Build Human-in-the-Loop AI Pipelines Using Active Learning
+Maximizes human-machine partnership potential
+Importance of human involvement throughout learning process
+Wide applications: medical, retail, finance, agriculture, automotive, geospatial
+URL: Humans in the Loop (February 2025)
+Implementation Approaches
+Human-in-the-Loop (HITL) Explained (Encord Blog, 2026)
+Combines human expertise with machine learning
+Humans curate and annotate data before feeding to AI
+HITL systems combine automated predictions with structured human oversight
+URL: Encord (March 2026)
+
+Human-in-the-Loop Systems for Adaptive Learning Using Generative AI (NCSU,
+2024)
+Integrates student feedback into AI-generated solutions
+Tagging techniques and prompt engineering for personalization
+Retrieval-Augmented Generation (RAG) for educational material
+URL: arXiv (2508.11062)
+Interactive Training: Feedback-Driven Neural Network Optimization (2024)
+Rich body of work on human interventions during model training
+Compares active learning, interactive ML, and machine teaching paradigms
+Real-time, open-ended intervention during training
+URL: arXiv (2510.02297)
+Active Learning & Labeling
+Efficient Human-in-the-Loop Active Learning (2026)
+Novel framework for data labeling with flexible query types
+Addresses expensive and labor-intensive labeling, especially for specialized
+skills
+Multi-objective approach to optimize expert time
+URL: arXiv (2501.00277)
+Human-in-the-Loop for Active Learning (Humans in the Loop)
+Surfaces instances close to decision boundaries
+Identifies data drift in deployed AI models
+Post-deployment review for bias and failure modes
+URL: Humans in the Loop (February 2026)
+8. EXPLAINABILITY & INTERPRETABILITY IN AI/ML
+SHAP (SHapley Additive exPlanations)
+Explainable Artificial Intelligence Credit Risk Assessment (2025)
+SHAP and LIME frameworks for model interpretation
+Model-agnostic approach working with any ML algorithm
+Feature contribution analysis for predictions
+URL: arXiv (2506.19383)
+Understanding XAI: SHAP, LIME, And Other Key Techniques (2025)
+SHAP for both global and local interpretability
+Rich visualizations: beeswarm plots, summary plots, dependence plots
+Computational efficiency considerations
+
+URL: AI Competence (June 2025)
+A Perspective on Explainable AI: SHAP and LIME (Wiley, 2024)
+Comparison of SHAP and LIME frameworks
+Interpretation framework highlighting strengths and weaknesses
+URL: Advanced Intelligent Systems (June 2024)
+Decoding AI Predictions: XAI with LIME, SHAP, and InterpretML (Medium, 2024)
+Practical guide to explainability techniques
+Applications in regulatory compliance (GDPR, EU AI Act)
+URL: Medium (May 2024)
+LIME (Local Interpretable Model-Agnostic Explanations)
+Interpreting AI Models: LIME and SHAP in Alzheimer's Disease Detection (NCBI,
+2024)
+Systematic review of LIME and SHAP applications
+Both frameworks effective for clinical decision support systems
+URL: NCBI/PMC (2024)
+Enhancing Interpretability via CNN-BiLSTM and SHAP Analysis (2024)
+Post-hoc interpretation methods (LIME, SHAP)
+Permutation-based feature importance analysis
+URL: arXiv (2512.06730)
+Comprehensive XAI Reviews
+Evaluating Explainability in AI Models: SHAP, LIME, and Other Techniques (2024)
+Compares effectiveness, computational efficiency, interpretability, applicability
+Explores integrated gradients, counterfactual explanations, permutation
+importance
+URL: ResearchGate (September 2024)
+Mastering Explainable AI: SHAP, LIME, Counterfactuals, and Interpretable NNs
+(Medium, 2024)
+Comprehensive guide to XAI tools for transparent ML
+Importance for building trust and compliance
+URL: Medium (December 2024)
+Towards Trustworthy Keylogger Detection via XAI (2025)
+Global and local perspectives of model decisions
+SHAP summary plots and dependence plots
+URL: arXiv (2505.16103)
+Spectral Zones-Based SHAP/LIME (NCBI/PMC, 2024)
+
+Enhanced interpretability through grouped feature analysis
+Addresses limitations of individual feature perturbations
+URL: NCBI/PMC (2024)
+9. PERSONALIZED LEARNING RECOMMENDATIONS & PATHS
+Learning Path Optimization
+Personalized Learning Path Optimization Based on Enhanced Deep Neural
+Network (2025)
+Deep learning and reinforcement learning for intelligent learning support
+systems
+Real-time feedback and dynamic adjustments
+Enhanced learner motivation and engagement
+URL: Springer Nature (August 2025)
+Personalized Learning Path Recommendation Based on Knowledge Graphs (2026)
+Knowledge graphs model concepts, courses, resources, and relationships
+Evolution from content retrieval to multi-level personalization
+Approaches: knowledge tracing, cognitive diagnosis, path optimization
+URL: Electronics MDPI (January 2026)
+Simulation of Personalized English Learning Path Using Knowledge Graphs and
+Deep RL (2025)
+Integrates domain knowledge graphs with deep reinforcement learning
+Dynamic learner knowledge state perception
+Recommendation strategy optimization
+URL: Scientific Reports (October 2025)
+Recommendation Systems & Strategies
+Educational Personalized Learning Path Planning with Large Language Models
+(2024)
+LLM-based learning path planning for adaptive education
+Recent advancements leveraging knowledge graphs and AI
+Focus on interpretability of recommendations
+URL: arXiv (July 2024)
+Personalized Learning Path Planning Using Deep Generative Models and
+Quantum ML (2025)
+Transformer model for extracting features from multimodal data
+Adversarial training for robustness
+
+URL: Springer Nature (March 2025)
+A Comprehensive Exploration of Personalized Learning in Smart Education (2024)
+Student modeling to personalized recommendations
+Learning paths, course recommendations, exercise recommendations
+Knowledge graph-based approaches
+URL: arXiv (2402.01666)
+Personalized Learning Path Recommendation Strategy Based on Subject
+Knowledge Graph (2024)
+Knowledge graphs as backbone for subject domain representation
+Analyzing current knowledge state and identifying gaps
+Dynamic adjustment and feedback loops
+URL: ACM Proceedings (2024)
+IB-GRPO: Multi-Objective Personalized Learning Path Recommendation (2026)
+LLM-based alignment with educational objectives
+Optimization of multiple objectives simultaneously
+URL: arXiv (2601.14686)
+10. USER EXPERIENCE & INTERFACE DESIGN FOR EDUCATION
+Educational UI/UX Principles
+UI/UX Design for Education: Enhancing Learning Experiences (Medium, 2024)
+User-centered approach for diverse learners
+Empathy mapping and user personas for diverse needs
+URL: Medium (October 2024)
+Design for Education: Optimizing edTech Products (Backpack Interactive, 2025)
+Essential user flows: onboarding, rostering, content sequencing, dashboards
+Actionable data dashboards for concrete next steps
+Student agency and learner motivation
+URL: Backpack Interactive (January 2025)
+UX Design in Education for Student Engagement (Lollypop Design, 2025)
+Core principles: simplicity, clarity, engagement, usability
+Balancing cognitive load with effective learning
+URL: Lollypop Design (October 2025)
+Dashboard & Interface Design
+User-Centric Education UI/UX Design Services (DreamX)
+
+Specialized design for LMS, apps, student portals, virtual classrooms
+Prioritizes information hierarchy and intuitive navigation
+Mobile-responsive design for educational platforms
+URL: DreamX Web
+Design for Education: Complete UX Guide (GitNexa, 2026)
+UX sits at intersection of pedagogy, psychology, software design
+UI (visual styling) vs. UX (how system works over time)
+URL: GitNexa (April 2026)
+Artificial Intelligence in Elementary STEM: Teacher Dashboard Design (2024)
+Aggregated indicators for teachers (engagement trends, attention heatmaps,
+participation)
+Avoiding overwhelming educators or creating surveillance atmosphere
+Design priorities based on pedagogical necessity
+URL: arXiv (2511.00105)
+KEY RESEARCH TAKEAWAYS FOR PROJECT
+1. Document Parsing
+Action: Use multimodal LLMs (Claude 3.5 Sonnet, GPT-4V) for syllabus and PDF
+extraction
+Why: Superior OCR-free document understanding with contextual awareness
+Tools: pdfminer.six, PyPDF2 for baseline; LLM APIs for advanced parsing
+2. Topic Extraction & Mapping
+Action: Implement BERTopic for question-to-topic mapping with AI verification
+Why: Better semantic coherence than LDA; integration with LLMs for automatic
+interpretation
+Consider: Human verification loop essential given ambiguous multi-topic questions
+3. Performance Analytics
+Action: Use OULAD dataset patterns for validation; implement SHAP/LIME for
+explainability
+Why: Rich benchmark for educational ML; transparent scoring crucial for student
+trust
+Model choice: Rule-based scoring (primary) + Random Forest/Linear Regression
+(experimental)
+
+Action: Design around actionable insights, not data overwhelming
+Why: Learning analytics literature emphasizes clear, digestible visualizations
+Key principle: Show topic-wise accuracy trends, consistency scores, personalized
+recommendations
+5. Human-in-the-Loop Verification
+Action: Central to project architecture (student verifies AI topic mappings)
+Why: Rich body of HITL research shows effectiveness in handling AI mistakes
+Implementation: Simple approve/edit interface reduces friction
+6. Recommendation Engine
+Action: Personalize study recommendations using knowledge gaps + trends
+Why: Growing research on knowledge graph-based paths and LLM-generated
+recommendations
+Approach: Identify weak topics, rank by impact, generate actionable guidance
+ADDITIONAL RESOURCES
+Datasets for Validation
+OULAD (Open University Learning Analytics Dataset):
+https://analyse.kmi.open.ac.uk/open_dataset
+Kaggle OULAD Variants: https://www.kaggle.com/datasets/
+Relevant Libraries & Tools
+Document Processing: pdfminer.six, PyPDF2, Docling (IBM Research)
+Topic Modeling: BERTopic, scikit-learn LDA
+ML Models: scikit-learn (Random Forest, Linear Regression), XGBoost
+Explainability: SHAP, LIME
+Visualization: Recharts, D3.js, Plotly
+Standards & Best Practices
+GDPR compliance for educational data
+Pedagogical principles for dashboard design
+Active learning and human-centered AI approaches
+
+DOCUMENT METADATA
+Compilation Date: July 2026
+Total Sources: 100+ academic papers, blogs, and industry resources
+Coverage: EDM, ML prediction, document parsing, dashboards, HCI, XAI
+Purpose: Support literature review and project methodology
+HOW TO USE THIS DOCUMENT
+1. By Phase: Group papers by project phases (PDF pipeline, analytics, ML, dashboard)
+2. By Topic: Use sections to research specific areas (e.g., topic modeling for Phase 2)
+3. By Paper Type: Mix academic papers (validation) with practical guides
+(implementation)
+4. For Your Report: Cite papers relevant to your methodology, challenges, and design
+decisions
+5. For Team Discussion: Reference papers to justify architectural decisions (e.g., why
+HITL matters)

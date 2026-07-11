@@ -1,0 +1,285 @@
+ 
+1
+Scheme – I 
+ 
+Sample Question Paper       
+ 
+Program Name 
+: Electronics and Computer Engineering Program Group 
+Program Code 
+: CO/CM/CW/DE/EJ/ET/EN/EX/IE/IS/IC/MU  
+Semester  
+ 
+: Third  
+Course Title    
+: Digital Techniques  
+ 
+ 
+ 
+Marks  
+ 
+: 70 
+ 
+ 
+ 
+ 
+ 
+ 
+Time: 3 Hrs. 
+ 
+Instructions: 
+(1) All questions are compulsory. 
+(2) Illustrate your answers with neat sketches wherever necessary. 
+(3) Figures to the right indicate full marks. 
+(4) Assume suitable data if necessary. 
+(5) Preferably, write the answers in sequential order. 
+ 
+Q.1) Attempt any FIVE of the following.                                   
+ 
+   
+ 10 Marks  
+a) Write the base of the following number systems: Decimal, Binary, Octal, and 
+Hexadecimal. 
+b) Draw symbol and write the truth table of JK flip flop.                      
+c) State the necessity of multiplexer. 
+d) Write excitation table of D flip flop. 
+e) List any two specifications of IC- DAC 0808.  
+f) 
+Draw three variable K-map format. 
+g) Define modulus of a counter? Write down the number of flip flops required for 
+mod-5 counter? 
+Q.2) Attempt any THREE of the following.                              
+ 
+    
+12 Marks  
+a) 
+For the given figure No. 1, derive the Boolean expression of Y.  
+ 
+ 
+Figure No. 1 
+22320
+
+ 
+2
+b) 
+Draw the circuit diagram of BCD to 7 segment decoder and write its truth table. 
+c) 
+Draw the block diagram of Programmable Logic Array. 
+d) 
+Minimize the following expression using K-map.                                                                            
+          f (P, Q, R, S) = Σ m (0, 1, 4, 5, 7, 8, 9, 12, 13, 15). 
+ 
+Q.3) Attempt any THREE of the following.                                 
+  
+12 Marks  
+a) Realize the following logic operations using only NAND gates: AND, OR, NOT. 
+b) Compare TTL and CMOS logic families on the basis of following:   
+    i) Propogation delay ii) Power dissipation iii) Fan-out iv) Basic gate 
+c) Describe the operation of 4- bit universal shift register with the help of block 
+diagram. 
+d) Calculate analog output of 4 bit DAC for digital input is 1011. Assume VF S= 5V. 
+Q.4) Attempt any THREE of the following.                                 
+  
+12 Marks  
+a) Draw the symbol and write logic expression and truth table of the two input 
+universal logic gates. 
+b) Describe function of full subtractor circuit with its truth table, K-map 
+simplification and logic diagram. 
+c) Design 1: 16 demultiplexer using 1: 4 demultiplexers. 
+d) Describe the working of Master-Slave JK Flip-Flop with Truth Table and Logic 
+diagram. 
+         e)   The output of 8 bit DAC varies between +10V and -10V. Calculate the following: 
+ 
+i) Resolution   ii) Percentage resolution. 
+Q.5) Attempt any TWO of the following.                                     
+  
+12 Marks  
+a) Design 3-bit synchronous counter and draw output waveform. 
+b) Compare the following (Any three points)             . 
+(i) Volatile with Non-Volatile memory. 
+(ii) SRAM with DRAM memory. 
+c) Convert the following : 
+i) (5C7)16 = (?)10 
+ii) (2598)10 = (?)16 
+iii) (10110)2 = (?)10 = (?)16 
+ 
+ 
+
+ 
+3
+Q.6) Attempt any TWO of the following.                                      
+ 
+12 Marks  
+a) 
+Describe the procedure to design MOD-6 counter using IC 7490 in brief. 
+b) 
+Design a four bit BCD adder using IC 7483 and NAND gates only. 
+c) 
+Identify the circuit shown as figure no.2 and explain its working. 
+ 
+ 
+Figure No.2. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+4
+Scheme – I 
+ 
+Sample Test Paper - I              
+ 
+Program Name 
+: Electronics and Computer Engineering Program Group                             
+Program Code 
+: CO/CM/CW/DE/EJ/ET/EN/EX/IE/IS/IC/MU 
+Semester  
+ 
+: Third  
+Course Title    
+: Digital Techniques  
+ 
+ 
+ 
+ 
+Marks  
+ 
+: 20 
+ 
+ 
+ 
+ 
+ 
+ 
+Time: 1 Hour 
+ 
+Instructions: 
+(1) All questions are compulsory. 
+(2) Illustrate your answers with neat sketches wherever necessary. 
+(3) Figures to the right indicate full marks. 
+(4) Assume suitable data if necessary. 
+(5) Preferably, write the answers in sequential order. 
+ 
+Q.1 Attempt any FOUR.                                                                        
+ 
+08 Marks  
+a) Convert the following Binary number into Gray code. 
+(i) 1111 
+(ii) 1101001 
+b) Draw the Symbol and write the Truth Table of Universal Gates. 
+c)  Define following characteristics of logic families : 
+i) Fan in 
+  ii)Fan out 
+d) State commutative and associative laws for the binary numbers. 
+e) Draw the block diagram and write the Truth Table of Half Subtractor. 
+f)  Define 1’s and 2’s Complement of Binary Number with example. 
+ 
+Q.2 Attempt any THREE.    
+ 
+ 
+ 
+ 
+ 
+ 
+12 Marks  
+a) Perform the following  subtraction using 1’s and 2’s complement method: 
+i) (52)10 – (65)10 
+ 
+ii) (101011)2 – (11010)2 
+b) State and prove De Morgan’s Theorems. 
+c) Reduce the following Boolean expression using Boolean laws. 
+Y=AB+AB+AB+AB 
+d) Compare the parameters of TTL, ECLand CMOS logic families (any 4 points). 
+e) Describe the operation of TTL logic circuit working as NAND gate. 
+f)   Design Full Adder using K-map and Truth Table. 
+ 
+22320
+
+ 
+5
+Scheme – I 
+ 
+Sample Test Paper – II      
+            
+Program Name 
+: Electronics and Computer Engineering Program Group                             
+Program Code 
+: CO/CM/CW/DE/EJ/ET/EN/EX/IE/IS/IC/MU 
+Semester  
+ 
+: Third  
+Course Title    
+: Digital Techniques  
+ 
+ 
+ 
+ 
+Marks  
+ 
+: 20 
+ 
+ 
+ 
+ 
+ 
+ 
+Time:1 Hour 
+ 
+Instructions: 
+(1) All questions are compulsory. 
+(2) Illustrate your answers with neat sketches wherever necessary. 
+(3) Figures to the right indicate full marks. 
+(4) Assume suitable data if necessary. 
+(5) Preferably, write the answers in sequential order. 
+ 
+Q.1 Attempt any FOUR. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+08 Marks  
+a) Draw Block diagram of 4:1 Multiplexer and write its truth table. 
+b) Explain the triggering methods used for digital circuits. 
+c) Identify function of following ICs.  (i) 74151(ii) 74155 
+d)  Draw symbol and write the truth table of JK flip flop. 
+e)  State any two applications of PLA’s. 
+f) Compare Static RAM and Dynamic RAM. 
+ 
+Q.2 Attempt any THREE.  
+ 
+ 
+ 
+ 
+ 
+ 
+12 Marks  
+a) Realize the following function using demultiplexer :  
+                      F1 = Σ m (1, 2, 5, 6, 7, 11, 14) 
+F2 = π M (0, 1, 2, 5, 6, 7, 8, 11, 12, 15) 
+b) Describe the operation of 4 bit SISO shift register with the help of block diagram, 
+truth table and timing diagram. 
+c) Describe the operation of  3 bit synchronous up counter with Truth Table and  Logic 
+diagram 
+d) Describe the working principle of Successive approximation type ADC with the help 
+of block diagram. 
+e) Design a four bit BCD adder using IC 7483 and NAND gates. 
+f) Give the function of the following terminals of IC 7447. 
+   i) LT ii) RBI   iii) BI   iv) RBO 
+ 
+22320

@@ -1,0 +1,132 @@
+ 
+Course Contents and Lecture Schedule  
+ 
+No 
+Topic 
+No. 
+of 
+Lectures 
+(hrs) 
+1 
+Electrochemistry and Corrosion 
+9 
+1.1 
+Introduction - Differences between electrolytic and electrochemical cells- Daniel 
+cell - redox reactions - cell representation.  Different types of electrodes (brief) - 
+Reference electrodes- SHE - Calomel electrode - Glass Electrode - Construction 
+and Working. 
+2 
+1.2 
+Single electrode potential – definition - Helmholtz electrical double layer -
+Determination of E0 using calomel electrode. Determination of pH using glass 
+electrode. Electrochemical series and its applications. Free energy and EMF - 
+Nernst Equation – Derivation - single electrode and cell (Numericals) -Application 
+-Variation of emf with temperature. 
+3 
+1.3 
+Potentiometric titration - Introduction -Redox titration only.  Lithiumion cell -
+construction and working. Conductivity- Measurement of conductivity of a 
+solution (Numericals). 
+2 
+1.4
+Corrosion-Electrochemicalcorrosion – mechanism. Galvanic series- cathodic 
+protection -  electroless plating –Copper and Nickel plating. 
+2
+2 
+Spectroscopic Techniques and Applications  
+9 
+2.1 
+Introduction- Types of spectrum - electromagnetic spectrum - molecular energy 
+levels - Beer Lambert’s law (Numericals). 
+2 
+2.2 
+UV-Visible Spectroscopy – Principle - Types of electronic transitions - Energy 
+level diagram of ethane, butadiene, benzene and hexatriene. Instrumentation of 
+UV-Visible spectrometer and applications. 
+2 
+2.3 
+IR-Spectroscopy – Principle - Number of vibrational modes -Vibrational energy 
+states of a diatomic molecule and -Determination of force constant of diatomic 
+molecule (Numericals) –Applications. 
+2 
+2.4 
+1H NMR spectroscopy – Principle - Relation between field strength and frequency 
+- chemical shift - spin-spin splitting (spectral problems ) - coupling constant 
+(definition)  - applications of NMR- including MRI (brief). 
+3 
+3 
+Instrumental Methods and Nanomaterials 
+9 
+3.1 
+Thermal analysis –TGA- Principle, instrumentation (block diagram) and 
+applications – TGA of CaC2O4.H2O and polymers. DTA-Principle, instrumentation 
+(block diagram) and applications - DTA of CaC2O4.H2O. 
+2 
+Downloaded from Ktunotes.in
+KTUNOTES.IN
+
+ 
+3.2 
+Chromatographic methods - Basic principles and applications of column and TLC-
+Retention factor. 
+2 
+3.3 
+GC and HPLC-Principle, instrumentation (block diagram) - retention time and 
+applications. 
+2 
+3.4 
+Nanomaterials - Definition - Classification - Chemical methods of preparation -
+Hydrolysis and Reduction - Applications of nanomaterials - Surface 
+characterisation -SEM – Principle and instrumentation (block diagram). 
+3 
+4 
+Stereochemistry and Polymer Chemistry 
+9 
+4.1 
+Isomerism-Structural, chain, position, functional,  tautomerism and matamerism
+- Definition with examples - Representation of 3D structures-Newman, Sawhorse, 
+Wedge and Fischer projection of substituted methane and ethane. 
+Stereoisomerism - Geometrical isomerism in double bonds and cycloalkanes (cis-
+trans and E-Z notations). 
+2 
+4.2 
+R-S Notation – Rules and examples - Optical isomerism, Chirality, Enantiomers 
+and Diastereoisomers-Definition with examples. 
+1 
+4.3 
+Conformational analysis of ethane, butane, cyclohexane, mono and di methyl 
+substituted cyclohexane. 
+2 
+4.4 
+Copolymers - Definition - Types - Random, Alternating, Block and Graft 
+copolymers - ABS - preparation, properties and applications. Kevlar-preparation, 
+properties and applications. Conducting polymers - Doping -Polyaniline and 
+Polypyrrole - preparation properties and applications. OLED - Principle, 
+construction and advantages. 
+4 
+5 
+Water Chemistry and Sewage Water Treatment 
+9 
+5.1 
+Water characteristics - Hardness - Types of hardness- Temporary and Permanent 
+- Disadvantages of hard water -Units of hardness- ppm and mg/L -Degree of 
+hardness (Numericals) - Estimation of hardness-EDTA method (Numericals).  
+Water softening methods-Ion exchange process-Principle, procedure and 
+advantages. Reverse osmosis – principle, process and advantages. 
+3 
+5.2 
+Municipal water treatment (brief) - Disinfection methods - chlorination, ozone  
+andUV irradiation. 
+2 
+5.3 
+Dissolved oxygen (DO) -Estimation (only brief procedure-Winkler’s method), BOD 
+and COD-definition, estimation (only brief  procedure) and significance 
+(Numericals). 
+2 
+5.4 
+Sewage water treatment - Primary, Secondary and Tertiary - Flow diagram -
+Trickling filter and UASB process. 
+2 
+ 
+Downloaded from Ktunotes.in
+KTUNOTES.IN

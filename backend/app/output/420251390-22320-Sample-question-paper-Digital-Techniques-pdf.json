@@ -1,0 +1,412 @@
+{
+    "document_type": "question_paper",
+    "is_partial": true,
+    "course_code": null,
+    "program_code": ": CO/CM/CW/DE/EJ/ET/EN/EX/IE/IS/IC/MU",
+    "course_name": ": Electronics and Computer Engineering Program Group",
+    "semester": ": Third",
+    "exam": "Sample Question Paper",
+    "month": null,
+    "year": null,
+    "duration": "1 Hour",
+    "maximum_marks": "10",
+    "questions": [
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": null,
+            "marks": 10,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Attempt any FIVE of the following."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "a",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Write the base of the following number systems: Decimal, Binary, Octal, and Hexadecimal."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "b",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Draw",
+            "difficulty": null,
+            "question": "Draw symbol and write the truth table of JK flip flop."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "c",
+            "marks": null,
+            "or_question": false,
+            "question_type": "State",
+            "difficulty": null,
+            "question": "State the necessity of multiplexer."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "d",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Write excitation table of D flip flop."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "e",
+            "marks": null,
+            "or_question": false,
+            "question_type": "List",
+            "difficulty": null,
+            "question": "List any two specifications of IC- DAC 0808."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "f",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Draw",
+            "difficulty": null,
+            "question": "Draw three variable K-map format."
+        },
+        {
+            "question_number": "1",
+            "part": null,
+            "sub_question": "g",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Define",
+            "difficulty": null,
+            "question": "Define modulus of a counter? Write down the number of flip flops required for mod-5 counter?"
+        },
+        {
+            "question_number": "2",
+            "part": null,
+            "sub_question": null,
+            "marks": 12,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Attempt any THREE of the following."
+        },
+        {
+            "question_number": "2",
+            "part": null,
+            "sub_question": "a",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Derive",
+            "difficulty": null,
+            "question": "For the given figure No. 1, derive the Boolean expression of Y. Figure No. 1 22320 2"
+        },
+        {
+            "question_number": "2",
+            "part": null,
+            "sub_question": "b",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Draw",
+            "difficulty": null,
+            "question": "Draw the circuit diagram of BCD to 7 segment decoder and write its truth table."
+        },
+        {
+            "question_number": "2",
+            "part": null,
+            "sub_question": "c",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Draw",
+            "difficulty": null,
+            "question": "Draw the block diagram of Programmable Logic Array."
+        },
+        {
+            "question_number": "2",
+            "part": null,
+            "sub_question": "d",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Minimize the following expression using K-map. f (P, Q, R, S) = \u03a3 m (0, 1, 4, 5, 7, 8, 9, 12, 13, 15)."
+        },
+        {
+            "question_number": "3",
+            "part": null,
+            "sub_question": null,
+            "marks": 12,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Attempt any THREE of the following."
+        },
+        {
+            "question_number": "3",
+            "part": null,
+            "sub_question": "a",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Realize the following logic operations using only NAND gates: AND, OR, NOT."
+        },
+        {
+            "question_number": "3",
+            "part": null,
+            "sub_question": "b",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Compare",
+            "difficulty": null,
+            "question": "Compare TTL and CMOS logic families on the basis of following:"
+        },
+        {
+            "question_number": "3",
+            "part": null,
+            "sub_question": "i",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Propogation delay ii) Power dissipation iii) Fan-out iv) Basic gate"
+        },
+        {
+            "question_number": "3",
+            "part": null,
+            "sub_question": "c",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Describe the operation of 4- bit universal shift register with the help of block diagram."
+        },
+        {
+            "question_number": "3",
+            "part": null,
+            "sub_question": "d",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Calculate",
+            "difficulty": null,
+            "question": "Calculate analog output of 4 bit DAC for digital input is 1011. Assume VF S= 5V."
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": null,
+            "marks": 12,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Attempt any THREE of the following."
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": "a",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Draw",
+            "difficulty": null,
+            "question": "Draw the symbol and write logic expression and truth table of the two input universal logic gates."
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": "b",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Describe function of full subtractor circuit with its truth table, K-map simplification and logic diagram."
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": "c",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Design",
+            "difficulty": null,
+            "question": "Design 1: 16 demultiplexer using 1: 4 demultiplexers."
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": "d",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Describe the working of Master-Slave JK Flip-Flop with Truth Table and Logic diagram."
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": "e",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Calculate",
+            "difficulty": null,
+            "question": "The output of 8 bit DAC varies between +10V and -10V. Calculate the following:"
+        },
+        {
+            "question_number": "4",
+            "part": null,
+            "sub_question": "i",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Resolution ii) Percentage resolution."
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": null,
+            "marks": 12,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Attempt any TWO of the following."
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "a",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Design",
+            "difficulty": null,
+            "question": "Design 3-bit synchronous counter and draw output waveform."
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "b",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Compare",
+            "difficulty": null,
+            "question": "Compare the following (Any three points) ."
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "i",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Volatile with Non-Volatile memory."
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "ii",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "SRAM with DRAM memory."
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "c",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Convert the following :"
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "i",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Short Answer",
+            "difficulty": null,
+            "question": "(5C7)16 = (?)10"
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "ii",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Short Answer",
+            "difficulty": null,
+            "question": "(2598)10 = (?)16"
+        },
+        {
+            "question_number": "5",
+            "part": null,
+            "sub_question": "iii",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Short Answer",
+            "difficulty": null,
+            "question": "(10110)2 = (?)10 = (?)16 3"
+        },
+        {
+            "question_number": "6",
+            "part": null,
+            "sub_question": null,
+            "marks": 12,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Attempt any TWO of the following."
+        },
+        {
+            "question_number": "6",
+            "part": null,
+            "sub_question": "a",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Design",
+            "difficulty": null,
+            "question": "Describe the procedure to design MOD-6 counter using IC 7490 in brief."
+        },
+        {
+            "question_number": "6",
+            "part": null,
+            "sub_question": "b",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Design",
+            "difficulty": null,
+            "question": "Design a four bit BCD adder using IC 7483 and NAND gates only."
+        },
+        {
+            "question_number": "6",
+            "part": null,
+            "sub_question": "c",
+            "marks": null,
+            "or_question": false,
+            "question_type": "Explain",
+            "difficulty": null,
+            "question": "Identify the circuit shown as figure no.2 and explain its working. Figure No.2. 4 Scheme \u2013 I"
+        }
+    ],
+    "missing_fields": [
+        "course_code",
+        "month",
+        "year"
+    ],
+    "source_file": "420251390-22320-Sample-question-paper-Digital-Techniques-pdf.pdf",
+    "parsed_at": "2026-07-11T11:16:29.733508+00:00"
+}

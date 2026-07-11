@@ -1,0 +1,63 @@
+{
+    "document_type": "question_paper",
+    "is_partial": true,
+    "course_code": "CST202",
+    "program_code": null,
+    "course_name": "Computer Organization and Architecture",
+    "semester": null,
+    "exam": null,
+    "month": null,
+    "year": null,
+    "duration": "2 Hours",
+    "maximum_marks": "50",
+    "questions": [
+        {
+            "question_number": "1",
+            "part": "A",
+            "sub_question": null,
+            "marks": 5,
+            "or_question": false,
+            "question_type": "Short Answer",
+            "difficulty": null,
+            "question": "What is a functional unit?"
+        },
+        {
+            "question_number": "2",
+            "part": "A",
+            "sub_question": null,
+            "marks": 5,
+            "or_question": false,
+            "question_type": "List",
+            "difficulty": null,
+            "question": "List the components of a CPU."
+        },
+        {
+            "question_number": "A",
+            "part": "B",
+            "sub_question": null,
+            "marks": 10,
+            "or_question": true,
+            "question_type": "Differentiate",
+            "difficulty": null,
+            "question": "Differentiate between RISC and CISC."
+        },
+        {
+            "question_number": "B",
+            "part": "B",
+            "sub_question": null,
+            "marks": 10,
+            "or_question": true,
+            "question_type": "Draw",
+            "difficulty": null,
+            "question": "Draw the block diagram of a computer."
+        }
+    ],
+    "missing_fields": [
+        "semester",
+        "exam",
+        "month",
+        "year"
+    ],
+    "source_file": "ktu_paper.pdf",
+    "parsed_at": "2026-07-11T11:11:15.436307+00:00"
+}

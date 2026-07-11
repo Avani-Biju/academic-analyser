@@ -1,0 +1,88 @@
+{
+    "document_type": "question_paper",
+    "is_partial": false,
+    "course_code": "24BST1101",
+    "program_code": null,
+    "course_name": "Linear Algebra and Calculus",
+    "semester": "S1",
+    "exam": "End Semester Examination",
+    "month": "November",
+    "year": "2024",
+    "duration": "3 Hours",
+    "maximum_marks": "100",
+    "questions": [
+        {
+            "question_number": "1",
+            "part": "A",
+            "sub_question": null,
+            "marks": 3,
+            "or_question": false,
+            "question_type": "Define",
+            "difficulty": null,
+            "question": "Define the rank of a matrix."
+        },
+        {
+            "question_number": "2",
+            "part": "A",
+            "sub_question": null,
+            "marks": 3,
+            "or_question": false,
+            "question_type": "Calculate",
+            "difficulty": null,
+            "question": "Calculate the eigenvalues of the given matrix."
+        },
+        {
+            "question_number": "3",
+            "part": "A",
+            "sub_question": null,
+            "marks": 3,
+            "or_question": false,
+            "question_type": "Explain",
+            "difficulty": null,
+            "question": "Explain Gauss Elimination method."
+        },
+        {
+            "question_number": "4",
+            "part": "B",
+            "sub_question": "a",
+            "marks": 5,
+            "or_question": false,
+            "question_type": "Derive",
+            "difficulty": null,
+            "question": "Derive the formula for linear approximation."
+        },
+        {
+            "question_number": "4",
+            "part": "B",
+            "sub_question": "b",
+            "marks": 5,
+            "or_question": true,
+            "question_type": "Compare",
+            "difficulty": null,
+            "question": "Compare eigenvectors of symmetric matrices."
+        },
+        {
+            "question_number": "5",
+            "part": "B",
+            "sub_question": "a",
+            "marks": 5,
+            "or_question": true,
+            "question_type": "Design",
+            "difficulty": null,
+            "question": "Design a matrix given its eigenvectors."
+        },
+        {
+            "question_number": "5",
+            "part": "B",
+            "sub_question": "b",
+            "marks": 5,
+            "or_question": true,
+            "question_type": "Discuss",
+            "difficulty": null,
+            "question": "Discuss the properties of orthogonal matrices."
+        }
+    ],
+    "missing_fields": [],
+    "source_file": "test_saintgits.pdf",
+    "parsed_at": "2026-07-11T11:11:15.433558+00:00"
+}

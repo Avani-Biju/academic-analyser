@@ -1,0 +1,46 @@
+{
+    "document_type": "question_paper",
+    "is_partial": true,
+    "course_code": "CS101",
+    "program_code": null,
+    "course_name": null,
+    "semester": null,
+    "exam": null,
+    "month": null,
+    "year": null,
+    "duration": null,
+    "maximum_marks": null,
+    "questions": [
+        {
+            "question_number": "1",
+            "part": "I",
+            "sub_question": null,
+            "marks": null,
+            "or_question": false,
+            "question_type": "State",
+            "difficulty": null,
+            "question": "State the first law."
+        },
+        {
+            "question_number": "2",
+            "part": "I",
+            "sub_question": null,
+            "marks": null,
+            "or_question": false,
+            "question_type": "Other",
+            "difficulty": null,
+            "question": "Short note on variables."
+        }
+    ],
+    "missing_fields": [
+        "course_name",
+        "semester",
+        "exam",
+        "month",
+        "year",
+        "duration",
+        "maximum_marks"
+    ],
+    "source_file": "min.pdf",
+    "parsed_at": "2026-07-11T11:11:15.437988+00:00"
+}

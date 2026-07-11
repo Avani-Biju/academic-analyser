@@ -1,0 +1,25 @@
+{
+    "document_type": "question_paper",
+    "is_partial": true,
+    "course_code": null,
+    "course_name": null,
+    "semester": null,
+    "exam": null,
+    "month": null,
+    "year": null,
+    "duration": null,
+    "maximum_marks": null,
+    "questions": [],
+    "missing_fields": [
+        "course_code",
+        "course_name",
+        "semester",
+        "exam",
+        "month",
+        "year",
+        "duration",
+        "maximum_marks"
+    ],
+    "source_file": "Chemistry question paper.pdf",
+    "parsed_at": "2026-07-11T11:03:39.745038+00:00"
+}
