@@ -1,0 +1,106 @@
+@if (loading) {
+  <div class="text-center py-5">
+    <div class="spinner-border spinner-border-sm text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+}
+
+@if (!loading && !course) {
+  <div class="card border-0 shadow-sm">
+    <div class="card-body text-center py-5">
+      <p class="text-muted">Course not found.</p>
+      <a routerLink="/courses" class="btn btn-sm btn-outline-primary">Back to Courses</a>
+    </div>
+  </div>
+}
+
+@if (!loading && course) {
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-items-start mb-4">
+    <div>
+      <a routerLink="/courses" class="text-muted text-decoration-none small mb-1 d-block">&larr; Back to Courses</a>
+      <h3 class="fw-bold text-dark mb-1">{{ course.course_name || 'Unnamed Course' }}</h3>
+      <div class="d-flex gap-2 align-items-center">
+        <span class="badge bg-primary bg-opacity-10 text-primary">{{ course.course_code }}</span>
+        <span class="text-muted small">Sem {{ course.semester || '—' }}</span>
+        <span class="text-muted small">{{ course.credits || '—' }} credits</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Syllabus Section -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-header bg-white border-bottom py-3">
+      <h6 class="fw-semibold mb-0">Syllabus</h6>
+    </div>
+    <div class="card-body">
+      @if (!syllabus) {
+        <p class="text-muted text-center py-3 mb-0">No syllabus uploaded for this course.</p>
+      }
+      @if (syllabus) {
+        <p class="text-muted small mb-3">Source: {{ syllabus.source_file }}</p>
+        @if (syllabusModules.length > 0) {
+          @for (mod of syllabusModules; track $index) {
+            <div class="mb-3">
+              <h6 class="fw-semibold text-dark mb-1">
+                Module {{ mod.module_number }}: {{ mod.module_title || 'Untitled' }}
+                @if (mod.hours) {
+                  <span class="badge bg-light text-muted ms-2">{{ mod.hours }} hrs</span>
+                }
+              </h6>
+              <ul class="list-unstyled ps-3 mb-0">
+                @for (topic of mod.topics; track $index) {
+                  <li class="text-muted small py-1 border-start border-2 ps-3">{{ topic }}</li>
+                }
+              </ul>
+            </div>
+          }
+        }
+      }
+    </div>
+  </div>
+
+  <!-- Question Papers Section -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-header bg-white border-bottom py-3 d-flex justify-content-between align-items-center">
+      <h6 class="fw-semibold mb-0">Question Papers</h6>
+      <a routerLink="/upload" class="btn btn-sm btn-outline-primary">Upload QP</a>
+    </div>
+    <div class="card-body">
+      @if (questionPapers.length === 0) {
+        <p class="text-muted text-center py-3 mb-0">No question papers uploaded yet.</p>
+      }
+      @if (questionPapers.length > 0) {
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th class="fw-semibold text-muted small">Source</th>
+                <th class="fw-semibold text-muted small">Exam</th>
+                <th class="fw-semibold text-muted small">Month/Year</th>
+                <th class="fw-semibold text-muted small">Max Marks</th>
+                <th class="fw-semibold text-muted small">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (qp of questionPapers; track qp.id) {
+                <tr>
+                  <td class="small">{{ qp.source_file }}</td>
+                  <td>{{ qp.exam || '—' }}</td>
+                  <td>{{ qp.month || '' }} {{ qp.year || '—' }}</td>
+                  <td>{{ qp.maximum_marks || '—' }}</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary" (click)="runMatching(qp.id)">
+                      Run Matching
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+    </div>
+  </div>
+}

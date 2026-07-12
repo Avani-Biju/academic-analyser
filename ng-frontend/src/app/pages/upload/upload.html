@@ -1,0 +1,99 @@
+<div class="mb-4">
+  <h3 class="fw-bold text-dark mb-1">Upload Documents</h3>
+  <p class="text-muted">Upload a syllabus or question paper PDF. The system will extract and parse it automatically.</p>
+</div>
+
+<div class="row g-4">
+  <!-- Syllabus Upload -->
+  <div class="col-md-6">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-header bg-white border-bottom py-3">
+        <h6 class="fw-semibold mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-primary me-2" viewBox="0 0 16 16">
+            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687z"/>
+          </svg>
+          Upload Syllabus
+        </h6>
+      </div>
+      <div class="card-body p-4">
+        <p class="text-muted small mb-3">This will create a new course automatically based on the extracted course code.</p>
+
+        <div class="mb-3">
+          <input type="file" class="form-control" accept=".pdf" (change)="onSyllabusSelected($event)" id="syllabusInput">
+        </div>
+
+        @if (syllabusFile) {
+          <p class="text-muted small mb-3">Selected: <strong>{{ syllabusFile.name }}</strong></p>
+        }
+
+        <button class="btn btn-primary w-100" [disabled]="!syllabusFile || syllabusStatus === 'uploading'" (click)="uploadSyllabus()">
+          @if (syllabusStatus === 'uploading') {
+            <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+            Uploading...
+          } @else {
+            Upload Syllabus
+          }
+        </button>
+
+        @if (syllabusStatus === 'success') {
+          <div class="alert alert-success mt-3 mb-0 py-2 small">
+            <strong>Success!</strong> {{ syllabusResult?.message }}
+            <br>Course: <strong>{{ syllabusResult?.course_code }}</strong>
+          </div>
+        }
+        @if (syllabusStatus === 'error') {
+          <div class="alert alert-danger mt-3 mb-0 py-2 small">
+            <strong>Error:</strong> {{ syllabusError }}
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Question Paper Upload -->
+  <div class="col-md-6">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-header bg-white border-bottom py-3">
+        <h6 class="fw-semibold mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-warning me-2" viewBox="0 0 16 16">
+            <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
+            <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 10.082 10.082 0 0 0-1.189.762c-.39.282-.78.633-.975 1.02a.961.961 0 0 0-.084.177z"/>
+          </svg>
+          Upload Question Paper
+        </h6>
+      </div>
+      <div class="card-body p-4">
+        <p class="text-muted small mb-3">A syllabus must already exist for the course. The course code will be extracted automatically.</p>
+
+        <div class="mb-3">
+          <input type="file" class="form-control" accept=".pdf" (change)="onQuestionSelected($event)" id="questionInput">
+        </div>
+
+        @if (questionFile) {
+          <p class="text-muted small mb-3">Selected: <strong>{{ questionFile.name }}</strong></p>
+        }
+
+        <button class="btn btn-warning w-100 text-dark" [disabled]="!questionFile || questionStatus === 'uploading'" (click)="uploadQuestion()">
+          @if (questionStatus === 'uploading') {
+            <span class="spinner-border spinner-border-sm me-1" role="status"></span>
+            Uploading...
+          } @else {
+            Upload Question Paper
+          }
+        </button>
+
+        @if (questionStatus === 'success') {
+          <div class="alert alert-success mt-3 mb-0 py-2 small">
+            <strong>Success!</strong> {{ questionResult?.message }}
+            <br>Course: <strong>{{ questionResult?.course_code }}</strong>
+          </div>
+        }
+        @if (questionStatus === 'error') {
+          <div class="alert alert-danger mt-3 mb-0 py-2 small">
+            <strong>Error:</strong> {{ questionError }}
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

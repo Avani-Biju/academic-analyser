@@ -1,0 +1,388 @@
+<div class="page-content page-content--wizard">
+  <div class="wizard-container">
+    <div class="wizard-header">
+      <a routerLink="/courses" class="wizard-header__back text-sm text-link">← Back to My Courses</a>
+
+      <div class="wizard-header__meta">
+        <span class="wizard-header__eyebrow">Course onboarding</span>
+        <h1 class="wizard-header__title">Create Course Wizard</h1>
+        <p class="wizard-header__subtitle">
+          Add a new course, upload the syllabus, review the extraction, and save everything in one guided flow.
+        </p>
+      </div>
+
+      <div class="wizard-header__progress">
+        <div class="wizard-header__progress-text">
+          <span class="wizard-header__progress-step">{{ stepTitle }}</span>
+          <span class="wizard-header__progress-label">{{ steps[currentStep - 1].label }}</span>
+        </div>
+
+        <div class="step-indicator" aria-label="Create course progress">
+          @for (step of steps; track step.number; let last = $last) {
+            <button
+              type="button"
+              class="step-indicator__step"
+              [class.step-indicator__step--clickable]="step.number < currentStep"
+              [disabled]="step.number >= currentStep"
+              (click)="goToStep(step.number)">
+              <span
+                class="step-indicator__circle"
+                [class.step-indicator__circle--active]="step.number === currentStep"
+                [class.step-indicator__circle--done]="step.number < currentStep">
+                @if (step.number < currentStep) {
+                  <span>✓</span>
+                } @else {
+                  <span>{{ step.number }}</span>
+                }
+              </span>
+              <span
+                class="step-indicator__label"
+                [class.step-indicator__label--active]="step.number === currentStep"
+                [class.step-indicator__label--done]="step.number < currentStep">
+                {{ step.label }}
+              </span>
+            </button>
+
+            @if (!last) {
+              <div
+                class="step-indicator__connector"
+                [class.step-indicator__connector--done]="step.number < currentStep"></div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+
+    @if (currentStep === 1) {
+      <section class="wizard-card">
+        <div class="wizard-card__header">
+          <h2 class="wizard-card__title">Course Details</h2>
+          <p class="wizard-card__subtitle">Start with the core course information so the parser has the right context.</p>
+        </div>
+
+        <form class="wizard-card__body form-grid" [formGroup]="detailsForm">
+          <div class="form-group form-group--full">
+            <label class="form-label" for="courseName">Course Name</label>
+            <input id="courseName" type="text" class="form-input" formControlName="courseName" placeholder="Introduction to Digital Techniques">
+            @if (controlInvalid(detailsForm.get('courseName'))) {
+              <p class="form-error">Enter a course name to continue.</p>
+            }
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="courseCode">Course Code</label>
+            <input id="courseCode" type="text" class="form-input" formControlName="courseCode" placeholder="EC202">
+            @if (controlInvalid(detailsForm.get('courseCode'))) {
+              <p class="form-error">Enter the course code.</p>
+            }
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="semester">Semester</label>
+            <select id="semester" class="form-select" formControlName="semester">
+              <option value="">Select semester</option>
+              @for (semester of ['1','2','3','4','5','6','7','8']; track semester) {
+                <option [value]="semester">Semester {{ semester }}</option>
+              }
+            </select>
+            @if (controlInvalid(detailsForm.get('semester'))) {
+              <p class="form-error">Choose the semester.</p>
+            }
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="credits">Credits</label>
+            <input id="credits" type="number" min="1" class="form-input" formControlName="credits" placeholder="4">
+            @if (controlInvalid(detailsForm.get('credits'))) {
+              <p class="form-error">Credits must be at least 1.</p>
+            }
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="department">Department <span class="form-label__optional">(Optional)</span></label>
+            <input id="department" type="text" class="form-input" formControlName="department" placeholder="Electronics Engineering">
+          </div>
+        </form>
+
+        <div class="wizard-card__footer">
+          <button type="button" class="btn btn--secondary" (click)="cancel()">Cancel</button>
+          <button type="button" class="btn btn--primary" (click)="nextStep()">Next</button>
+        </div>
+      </section>
+    }
+
+    @if (currentStep === 2) {
+      <section class="wizard-card">
+        <div class="wizard-card__header">
+          <h2 class="wizard-card__title">Upload Syllabus PDF</h2>
+          <p class="wizard-card__subtitle">Only PDF files are supported. Once selected, we upload and parse the syllabus automatically.</p>
+        </div>
+
+        <div class="wizard-card__body upload-step">
+          <label
+            class="upload-zone"
+            [class.dragover]="isDragging"
+            [class.upload-zone--disabled]="uploading"
+            (dragover)="onDragOver($event)"
+            (dragleave)="onDragLeave($event)"
+            (drop)="onDrop($event)">
+            <input
+              type="file"
+              accept=".pdf,application/pdf"
+              class="visually-hidden"
+              (change)="onFileSelected($event)">
+
+            <div class="upload-zone__icon">
+              <span class="upload-zone__glyph">PDF</span>
+            </div>
+            <h3 class="upload-zone__title">Drop your syllabus here</h3>
+            <p class="upload-zone__subtitle">or click to browse and upload a PDF file</p>
+            <span class="btn btn--secondary mt-4">Browse PDF</span>
+          </label>
+
+          @if (selectedFile || uploadedFilename) {
+            <div class="upload-zone__file">
+              <div>
+                <p class="upload-zone__filename">{{ uploadedFilename || selectedFile?.name }}</p>
+                <p class="text-xs text-secondary">
+                  @if (uploading) {
+                    Uploading and extracting syllabus...
+                  } @else if (parserConfirmed) {
+                    Extraction complete. Review the parsed syllabus next.
+                  } @else {
+                    Ready to upload.
+                  }
+                </p>
+              </div>
+
+              <button type="button" class="icon-btn" (click)="clearSelectedFile($event)" [disabled]="uploading" aria-label="Remove selected file">
+                ×
+              </button>
+            </div>
+          }
+
+          @if (uploading || uploadProgress > 0) {
+            <div class="upload-progress">
+              <div class="upload-progress__header">
+                <span class="text-sm font-medium">Upload progress</span>
+                <span class="text-sm text-secondary">{{ uploadProgress }}%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" [style.width.%]="uploadProgress"></div>
+              </div>
+            </div>
+          }
+
+          @if (uploadError) {
+            <div class="alert alert--danger">
+              <span>{{ uploadError }}</span>
+            </div>
+          }
+
+          @if (parserConfirmed) {
+            <div class="alert alert--success">
+              <span>The syllabus was uploaded and parsed successfully. You can continue to review and edit the extracted content.</span>
+            </div>
+          }
+        </div>
+
+        <div class="wizard-card__footer">
+          <button type="button" class="btn btn--secondary" (click)="prevStep()" [disabled]="uploading">Back</button>
+          <button type="button" class="btn btn--primary" (click)="nextStep()" [disabled]="!parserConfirmed || uploading">Next</button>
+        </div>
+      </section>
+    }
+
+    @if (currentStep === 3) {
+      <section class="wizard-card wizard-card--large">
+        <div class="wizard-card__header">
+          <h2 class="wizard-card__title">Review Extracted Syllabus</h2>
+          <p class="wizard-card__subtitle">The parser gives you a head start, but you can edit every field before saving the course.</p>
+        </div>
+
+        <form class="wizard-card__body editor-layout" [formGroup]="syllabusForm">
+          <div class="editor-section">
+            <div class="editor-section__header">
+              <h3 class="editor-section__title">Course Information</h3>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group form-group--full">
+                <label class="form-label" for="reviewCourseName">Course Name</label>
+                <input id="reviewCourseName" type="text" class="form-input" formControlName="course_name">
+                @if (controlInvalid(syllabusForm.get('course_name'))) {
+                  <p class="form-error">Course name is required.</p>
+                }
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="reviewCourseCode">Course Code</label>
+                <input id="reviewCourseCode" type="text" class="form-input" formControlName="course_code">
+                @if (controlInvalid(syllabusForm.get('course_code'))) {
+                  <p class="form-error">Course code is required.</p>
+                }
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="reviewSemester">Semester</label>
+                <input id="reviewSemester" type="text" class="form-input" formControlName="semester">
+                @if (controlInvalid(syllabusForm.get('semester'))) {
+                  <p class="form-error">Semester is required.</p>
+                }
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="reviewCredits">Credits</label>
+                <input id="reviewCredits" type="text" class="form-input" formControlName="credits">
+                @if (controlInvalid(syllabusForm.get('credits'))) {
+                  <p class="form-error">Credits are required.</p>
+                }
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="reviewDepartment">Department</label>
+                <input id="reviewDepartment" type="text" class="form-input" formControlName="department">
+              </div>
+            </div>
+          </div>
+
+          <div class="editor-section">
+            <div class="editor-section__header">
+              <h3 class="editor-section__title">Course Outcomes</h3>
+              <button type="button" class="btn btn--secondary btn--sm" (click)="addOutcome()">Add Outcome</button>
+            </div>
+
+            <div formArrayName="course_outcomes" class="stack-list">
+              @for (outcome of courseOutcomes.controls; track $index) {
+                <div class="inline-editor">
+                  <input type="text" class="form-input" [formControlName]="$index" placeholder="Enter a course outcome">
+                  <button type="button" class="icon-btn icon-btn--danger" (click)="removeOutcome($index)" [disabled]="courseOutcomes.length === 1" aria-label="Delete outcome">
+                    ×
+                  </button>
+                </div>
+                @if (controlInvalid(outcome)) {
+                  <p class="form-error">Each course outcome needs text.</p>
+                }
+              }
+            </div>
+          </div>
+
+          <div class="editor-section">
+            <div class="editor-section__header">
+              <h3 class="editor-section__title">Modules & Topics</h3>
+              <button type="button" class="btn btn--secondary btn--sm" (click)="addModule('New Module')">Add Module</button>
+            </div>
+
+            <div formArrayName="modules" class="module-list">
+              @for (module of modules.controls; track $index; let moduleIndex = $index) {
+                <div class="module-item" [formGroupName]="moduleIndex">
+                  <div class="module-item__header">
+                    <input type="text" class="form-input form-input--ghost" formControlName="module_name" placeholder="Module title">
+                    <button type="button" class="icon-btn icon-btn--danger" (click)="removeModule(moduleIndex)" [disabled]="modules.length === 1" aria-label="Delete module">
+                      ×
+                    </button>
+                  </div>
+
+                  @if (controlInvalid(module.get('module_name'))) {
+                    <p class="form-error">Module name is required.</p>
+                  }
+
+                  <div formArrayName="topics" class="topic-list">
+                    @for (topic of getTopics(moduleIndex).controls; track $index; let topicIndex = $index) {
+                      <div class="topic-item">
+                        <span class="topic-item__bullet">•</span>
+                        <input type="text" class="form-input form-input--sm" [formControlName]="topicIndex" placeholder="Topic name">
+                        <button type="button" class="icon-btn icon-btn--danger" (click)="removeTopic(moduleIndex, topicIndex)" [disabled]="getTopics(moduleIndex).length === 1" aria-label="Delete topic">
+                          ×
+                        </button>
+                      </div>
+                      @if (controlInvalid(topic)) {
+                        <p class="form-error">Topic text is required.</p>
+                      }
+                    }
+                  </div>
+
+                  <button type="button" class="btn btn--ghost btn--sm mt-4" (click)="addTopic(moduleIndex)">+ Add Topic</button>
+                </div>
+              }
+            </div>
+          </div>
+
+          @if (reviewError) {
+            <div class="alert alert--danger">
+              <span>{{ reviewError }}</span>
+            </div>
+          }
+        </form>
+
+        <div class="wizard-card__footer">
+          <button type="button" class="btn btn--secondary" (click)="prevStep()">Back</button>
+          <button type="button" class="btn btn--primary" (click)="nextStep()">Next</button>
+        </div>
+      </section>
+    }
+
+    @if (currentStep === 4) {
+      <section class="wizard-card">
+        <div class="wizard-card__header">
+          <h2 class="wizard-card__title">Save Course</h2>
+          <p class="wizard-card__subtitle">Review the summary below, then save the course and continue into the workspace.</p>
+        </div>
+
+        <div class="wizard-card__body summary-layout">
+          <div class="summary-box">
+            <div class="summary-item">
+              <span class="summary-item__label">Course Name</span>
+              <span class="summary-item__value">{{ summaryCourseName || '—' }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Course Code</span>
+              <span class="summary-item__value">{{ summaryCourseCode || '—' }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Semester</span>
+              <span class="summary-item__value">{{ syllabusForm.value.semester || '—' }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Credits</span>
+              <span class="summary-item__value">{{ syllabusForm.value.credits || '—' }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Department</span>
+              <span class="summary-item__value">{{ syllabusForm.value.department || '—' }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Course Outcomes</span>
+              <span class="summary-item__value">{{ courseOutcomes.length }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Number of Modules</span>
+              <span class="summary-item__value">{{ totalModules }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Number of Topics</span>
+              <span class="summary-item__value">{{ totalTopics }}</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-item__label">Uploaded File</span>
+              <span class="summary-item__value">{{ uploadedFilename || selectedFile?.name || '—' }}</span>
+            </div>
+          </div>
+
+          @if (saveError) {
+            <div class="alert alert--danger">
+              <span>{{ saveError }}</span>
+            </div>
+          }
+        </div>
+
+        <div class="wizard-card__footer">
+          <button type="button" class="btn btn--secondary" (click)="prevStep()" [disabled]="saving">Back</button>
+          <button type="button" class="btn btn--primary" (click)="saveCourse()" [disabled]="saving || !parserConfirmed">
+            {{ saving ? 'Saving Course...' : 'Save Course' }}
+          </button>
+        </div>
+      </section>
+    }
+  </div>
+</div>

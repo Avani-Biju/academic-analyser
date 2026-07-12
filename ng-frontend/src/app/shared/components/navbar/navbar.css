@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  flex-shrink: 0;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 var(--space-6);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.app-header__left,
+.app-header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.app-header__toggle {
+  display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 1023px) {
+  .app-header__toggle {
+    display: inline-flex;
+  }
+}

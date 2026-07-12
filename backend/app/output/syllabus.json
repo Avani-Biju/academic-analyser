@@ -1,0 +1,201 @@
+{
+    "document_type": "syllabus",
+    "is_partial": true,
+    "course_code": "CST 202",
+    "course_name": "_________________",
+    "semester": null,
+    "scheme": "s in a digital computer (Cognitive knowledge: Understand)",
+    "credits": "YEAR OF",
+    "course_outcomes": [],
+    "modules": [
+        {
+            "module_number": "1",
+            "module_title": "Basic Structure of computers \u2013 functional units - basic operational concepts - bus structures.",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Memory locations and addresses - memory operations,Instructions and instruction sequencing ,",
+                "addressing modes.",
+                "Basic processing unit \u2013 fundamental concepts \u2013 instruction cycle \u2013 execution of a complete",
+                "instruction - single bus and multiple bus organization"
+            ]
+        },
+        {
+            "module_number": "2",
+            "module_title": "Register transfer logic: inter register transfer \u2013 arithmetic, logic and shift micro operations.",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Processor logic design: - processor organization \u2013 Arithmetic logic unit - design of",
+                "arithmetic circuit - design of logic circuit - Design of arithmetic logic unit - status register \u2013",
+                "design of shifter - processor unit \u2013 design of accumulator."
+            ]
+        },
+        {
+            "module_number": "3",
+            "module_title": "Arithmetic algorithms: Algorithms for multiplication and division (restoring method) of binary",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "numbers. Array multiplier , Booth\u2019s multiplication algorithm.",
+                "Pipelining: Basic principles, classification of pipeline processors, instruction and arithmetic",
+                "pipelines (Design examples not required), hazard detection and resolution."
+            ]
+        },
+        {
+            "module_number": "4",
+            "module_title": "Control Logic Design: Control organization \u2013 Hard_wired control-microprogram control \u2013",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "control of processor unit - Microprogram sequencer,micro programmed CPU organization -",
+                "horizontal and vertical micro instructions."
+            ]
+        },
+        {
+            "module_number": "5",
+            "module_title": "I/O organization: accessing of I/O devices \u2013 interrupts, interrupt hardware -Direct memory",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "access.",
+                "COMPUTER SCIENCE AND ENGINEERING",
+                "Memory system: basic concepts \u2013 semiconductor RAMs. memory system considerations \u2013",
+                "ROMs, Content addressable memory, cache memories - mapping functions."
+            ]
+        },
+        {
+            "module_number": "1",
+            "module_title": "1.1",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Functional units,basic operational concepts,bus structures",
+                "(introduction)",
+                "1.2",
+                "Memory locations and addresses , memory operations",
+                "1.3",
+                "Instructions and instruction sequencing",
+                "1.4",
+                "Addressing modes",
+                "1.5",
+                "Fundamental concepts of instruction execution, instruction cycle",
+                "1.6",
+                "Execution of a complete instruction - single bus organization (Lecture 1)",
+                "1.7",
+                "Execution of a complete instruction - single bus organization (Lecture 2)",
+                "1.8",
+                "Execution of a complete instruction - multiple bus organization (Lecture 1)",
+                "1.9",
+                "Execution of a complete instruction - multiple bus organization (Lecture 2)"
+            ]
+        },
+        {
+            "module_number": "2",
+            "module_title": "2.1",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Inter register transfer \u2013 arithmetic micro operations",
+                "2.2",
+                "Inter register transfer \u2013 logic and shift micro operations",
+                "2.3",
+                "Processor organization",
+                "2.4",
+                "Design of arithmetic circuit",
+                "2.5",
+                "Design of logic circuit",
+                "2.6",
+                "Design of arithmetic logic unit",
+                "2.7",
+                "Design of status register",
+                "2.8",
+                "Design of shifter - processor unit",
+                "COMPUTER SCIENCE AND ENGINEERING",
+                "2.9",
+                "Design of accumulator (Lecture 1)",
+                "2.10",
+                "Design of accumulator (Lecture 2)"
+            ]
+        },
+        {
+            "module_number": "3",
+            "module_title": "3.1",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Algorithm for multiplication of binary numbers",
+                "3.2",
+                "Algorithm for division (restoring method) of binary numbers",
+                "3.3",
+                "Array multiplier",
+                "3.4",
+                "Booth\u2019s multiplication algorithm",
+                "3.5",
+                "Pipelining: Basic principles",
+                "3.6",
+                "Classification of pipeline processors (Lecture 1)",
+                "3.7",
+                "Classification of pipeline processors (Lecture 2)",
+                "3.8",
+                "Instruction and arithmetic pipelines (Design examples not required)",
+                "3.9",
+                "Hazard detection and resolution"
+            ]
+        },
+        {
+            "module_number": "4",
+            "module_title": "4.1",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Control organization \u2013design of hardwired control logic (Lecture 1)",
+                "4.2",
+                "Control organization \u2013design of hardwired control logic (Lecture 2)",
+                "4.3",
+                "Control organization \u2013design of hardwired control logic (Lecture 3)",
+                "4.4",
+                "Design of microprogram control logic\u2013control of processor unit (Lecture1)",
+                "4.5",
+                "Design of microprogram control logic\u2013control of processor unit (Lecture2)",
+                "4.6",
+                "Design of microprogram control logic\u2013control of processor unit (Lecture3)",
+                "4.7",
+                "Microprogram sequencer",
+                "4.8",
+                "Micro programmed CPU organization",
+                "4.9",
+                "Microinstructions \u2013horizontal and vertical micro instructions"
+            ]
+        },
+        {
+            "module_number": "5",
+            "module_title": "5.1",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Accessing of I/O devices \u2013interrupts",
+                "5.2",
+                "Interrupt hardware",
+                "COMPUTER SCIENCE AND ENGINEERING",
+                "5.3",
+                "Direct memory access",
+                "5.4",
+                "Memory system: basic concepts \u2013semiconductor RAMs",
+                "5.5",
+                "Memory system considerations \u2013 ROMs",
+                "5.6",
+                "Content addressable memory",
+                "5.7",
+                "Cache memories -mapping functions (Lecture 1)",
+                "5.8",
+                "Cache memories -mapping functions (Lecture 2)"
+            ]
+        }
+    ],
+    "missing_fields": [
+        "semester"
+    ],
+    "source_file": "syllabus.pdf",
+    "parsed_at": "2026-07-11T13:44:10.863737+00:00"
+}

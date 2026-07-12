@@ -1,3 +1,5 @@
+python-dotenv
 python-multipart
 pymupdf
 rapidfuzz
+sqlalchemy

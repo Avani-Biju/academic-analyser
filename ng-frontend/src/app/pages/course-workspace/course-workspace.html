@@ -1,0 +1,69 @@
+<!-- ── Workspace Header ──────────────────────────────────────── -->
+<div class="workspace-header">
+  <div class="workspace-header__inner">
+
+    <!-- Breadcrumb -->
+    <a routerLink="/courses" class="workspace-header__back">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      My Courses
+    </a>
+
+    <!-- Course Title -->
+    @if (loading) {
+      <div class="workspace-header__skeleton">
+        <div class="skeleton" style="width:240px; height:24px; border-radius:6px;"></div>
+        <div class="skeleton" style="width:180px; height:16px; border-radius:4px;"></div>
+      </div>
+    }
+
+    @if (!loading && course) {
+      <div class="workspace-header__title-block">
+        <h1 class="workspace-header__course-name">
+          {{ course.course_name || 'Unnamed Course' }}
+        </h1>
+        <div class="workspace-header__meta">
+          <span class="badge badge--primary">{{ course.course_code }}</span>
+          @if (course.semester) {
+            <span class="workspace-header__meta-dot">·</span>
+            <span class="workspace-header__meta-item">Semester {{ course.semester }}</span>
+          }
+          @if (course.credits) {
+            <span class="workspace-header__meta-dot">·</span>
+            <span class="workspace-header__meta-item">{{ course.credits }} Credits</span>
+          }
+          @if (course.scheme) {
+            <span class="workspace-header__meta-dot">·</span>
+            <span class="workspace-header__meta-item">{{ course.scheme }}</span>
+          }
+        </div>
+      </div>
+    }
+
+    @if (!loading && !course) {
+      <div class="workspace-header__title-block">
+        <h1 class="workspace-header__course-name">Course not found</h1>
+      </div>
+    }
+
+  </div>
+</div>
+
+<!-- ── Tab Bar ────────────────────────────────────────────────── -->
+<div class="tab-bar workspace-tabs">
+  @for (tab of tabs; track tab.path) {
+    <a
+      class="tab-bar__item"
+      [routerLink]="tabRoute(tab.path)"
+      routerLinkActive="tab-bar__item--active"
+    >
+      {{ tab.label }}
+    </a>
+  }
+</div>
+
+<!-- ── Tab Content ────────────────────────────────────────────── -->
+<div class="workspace-body">
+  <router-outlet></router-outlet>
+</div>

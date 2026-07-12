@@ -1,0 +1,96 @@
+{
+    "document_type": "syllabus",
+    "is_partial": true,
+    "course_code": "24BST1101",
+    "course_name": "Linear Algebra and Calculus",
+    "semester": "S1",
+    "scheme": null,
+    "credits": 4,
+    "course_outcomes": [
+        "After the successful completion of the course the students will be able to:",
+        "CO1 Determine the rank of a matrix to investigate the existence and uniqueness of solutions, identify and",
+        "analyse system behaviour under different conditions.",
+        "CO2 Apply fundamental principles of Eigen values, Eigen vectors, diagonalization and quadratic forms,",
+        "enabling the analysis and interpretation of basic engineering problems.",
+        "CO3 Apply fundamental concepts such as partial derivatives, chain rule, local linear approximations and",
+        "optimization techniques to analyse and solve problems involving functions of two variables.",
+        "CO4 Compute multiple integrals and apply them to find areas and volumes of geometrical shapes, mass and",
+        "centre of gravity of plane laminas.",
+        "CO5 Describe functions using various series expansions such as Taylor series, Binomial series and Fourier",
+        "series."
+    ],
+    "modules": [
+        {
+            "module_number": "I",
+            "module_title": "System of Linear Equations",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "System of linear equations - Solution by Gauss elimination - Row Echelon form and Rank",
+                "of a matrix - Fundamental theorem for linear systems of homogeneous and",
+                "nonhomogeneous (without proof) - Homogeneous linear system - Non homogeneous",
+                "linear system."
+            ]
+        },
+        {
+            "module_number": "II",
+            "module_title": "Matrix Eigen Value Problems",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Eigen values and Eigen vectors - Properties of Eigen values - Diagonalization of matrices -",
+                "Orthogonal transformation and orthogonal matrices - Quadratic forms and their Canonical",
+                "forms."
+            ]
+        },
+        {
+            "module_number": "III",
+            "module_title": "Multivariable Calculus \u2013 Differentiation",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Concept of limit and continuity of functions of two variables - Partial derivatives of first and",
+                "higher order - Implicit partial differentiation - Local linear approximations - Chain rule for",
+                "derivatives and partial derivatives - Relative maxima and minima of function of two",
+                "variables (finding relative extrema only).",
+                "B. Tech. Computer Science and Engineering Fresher-Odd / (S1)",
+                "3 | P a g e"
+            ]
+        },
+        {
+            "module_number": "IV",
+            "module_title": "Multivariable Calculus - Integration",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Double integrals (Cartesian) - Reversing the order of integration - Change of",
+                "coordinates (Cartesian to Polar) - Finding areas and volume using double integrals -",
+                "Mass and centre of gravity of inhomogeneous laminas using double integral - Triple",
+                "integrals - Volume calculated as triple integral - Triple integral in cylindrical and",
+                "spherical coordinates (computations involving spheres and cylinders only)."
+            ]
+        },
+        {
+            "module_number": "V",
+            "module_title": "Series Representation of Functions",
+            "hours": null,
+            "course_outcomes": [],
+            "topics": [
+                "Taylor series and Maclaurin series - Binomial series - Fourier series - Euler",
+                "formulae - Convergence of Fourier series - Half Range sine and cosine series.",
+                "Conclusive Module: Contemporary topics/Industry-Academia interaction",
+                "Guest lectures (online) from industry personnel / R&D organizations (National /",
+                "International)",
+                "No ESE",
+                "2 Hrs.",
+                "B. Tech. Computer Science and Engineering Fresher-Odd / (S1)",
+                "4 | P a g e"
+            ]
+        }
+    ],
+    "missing_fields": [
+        "scheme"
+    ],
+    "source_file": "cst syllabus.pdf",
+    "parsed_at": "2026-07-11T20:57:33.443230+00:00"
+}
